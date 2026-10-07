@@ -10,6 +10,8 @@ import os
 import sys
 import time
 
+# 없는 번호를 탐색할 때 나오는 OpenCV 경고 문구를 숨긴다
+os.environ.setdefault("OPENCV_LOG_LEVEL", "ERROR")
 import cv2
 
 # 윈도우에서는 DSHOW 백엔드가 더 빠르게 열린다
